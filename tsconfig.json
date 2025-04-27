@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ESNext", // Современный JS
+		"lib": ["DOM", "DOM.Iterable", "ESNext"], // Типы для браузера
+		"allowJs": true, // Разрешить .js файлы (если вы мигрируете)
+		"skipLibCheck": true, // Не проверять типы в node_modules
+		"esModuleInterop": true, // Чтобы работали импорты из commonjs
+		"allowSyntheticDefaultImports": true, // Импорты вида import React from 'react'
+		"strict": true, // Включает строгую типизацию
+		"forceConsistentCasingInFileNames": true, // Проверка регистра в путях
+		"module": "ESNext", // Современные модули
+		"moduleResolution": "Node", // Как искать модули (как в Node.js)
+		"resolveJsonModule": true, // Можно импортировать .json
+		"isolatedModules": true, // Каждый файл как отдельный модуль (важно для CRA/Vite)
+		"noEmit": true, // Не компилируем в .js (если используете сборщик)
+		"jsx": "react-jsx" // Поддержка JSX без импорта React (React 17+)
+	},
+	"include": ["src"], // Берем только папку src
+	"exclude": ["node_modules"] // Исключаем node_modules
+}
